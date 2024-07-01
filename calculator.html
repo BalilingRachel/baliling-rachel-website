@@ -8,6 +8,7 @@
     <script src="js/numbers.js"></script>
     <script src="js/operation.js"></script>
     <title>Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -18,26 +19,30 @@
         <input id="operation-input" type="hidden">
         <input id="previous" type="hidden" value="0">
 
-        <button onclick="number(1)"> 1 </button>
-        <button onclick="number(2)"> 2 </button>
-        <button onclick="number(3)"> 3 </button>
-
-        <button onclick="number(4)"> 4 </button>
-        <button onclick="number(5)"> 5 </button>
-        <button onclick="number(6)"> 6 </button>
-
-        <button onclick="number(7)"> 7 </button>
-        <button onclick="number(8)"> 8 </button>
-        <button onclick="number(9)"> 9 </button>
-
-        <button onclick="number(0)"> 0 </button>
-
-        <button onclick="operation('+')"> + </button>
-        <button onclick="operation('-')"> - </button>
-        <button onclick="operation('*')"> * </button>
-        <button onclick="operation('/')"> / </button>
-        <button onclick="equal('=')"> = </button>
-        <button onclick="clearInput()"> Clear </button>
+        <div class="button-row">
+            <button onclick="number(1)">1</button>
+            <button onclick="number(2)">2</button>
+            <button onclick="number(3)">3</button>
+            <button class="operator" onclick="operation('+')">+</button>
+        </div>
+        <div class="button-row">
+            <button onclick="number(4)">4</button>
+            <button onclick="number(5)">5</button>
+            <button onclick="number(6)">6</button>
+            <button class="operator" onclick="operation('-')">-</button>
+        </div>
+        <div class="button-row">
+            <button onclick="number(7)">7</button>
+            <button onclick="number(8)">8</button>
+            <button onclick="number(9)">9</button>
+            <button class="operator" onclick="operation('*')">*</button>
+        </div>
+        <div class="button-row">
+            <button onclick="number(0)">0</button>
+            <button class="operator" onclick="operation('/')">/</button>
+            <button class="operator" onclick="equal('=')">=</button>
+            <button class="operator" onclick="clearInput()">Clear</button>
+        </div>
     </div>
 </body>
 

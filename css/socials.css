@@ -1,34 +1,47 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Ensure the body covers the full height of the viewport */
+    background-color: #ffe4e1; /* Soft pink background color */
+    color: #333; /* General text color */
 }
 
 header {
-    background-color: #333;
+    background-color: #ffb6c1; /* Light pink header */
     color: #fff;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-bottom: 5px solid #ff69b4; /* Add a border to enhance the header */
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-weight: 600;
 }
 
 nav {
-    background-color: #444;
-    color: #fff;
+    background-color: #fff0f5; /* Very light pink navigation */
     padding: 10px 0;
     text-align: center;
+    border-bottom: 2px solid #ffb6c1;
 }
 
 nav a {
     text-decoration: none;
-    color: #fff;
+    color: #ff69b4; /* Pink color for navigation links */
     margin: 0 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    background-color: #ffb6c1;
+    color: #fff;
 }
 
 main {
@@ -41,10 +54,21 @@ main {
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .social-link {
     text-align: center;
+    background-color: #fff;
+    border: 2px solid #ff69b4;
+    border-radius: 10px;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-link:hover {
+    transform: scale(1.05); /* Slightly enlarge the link on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .social-link a {
@@ -54,15 +78,17 @@ main {
 }
 
 .social-link img {
-    width: 150px;
-    height: 150px;
+    width: 100px; /* Adjust size for a better fit */
+    height: auto;
     display: block;
     margin: 0 auto 10px;
 }
 
 footer {
-    background-color: #333;
+    background-color: #ffb6c1;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
+    margin-top: auto; /* Push the footer to the bottom */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
 }
